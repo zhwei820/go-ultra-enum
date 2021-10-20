@@ -26,15 +26,6 @@ var (
             {{.Name}} : {{$.NewName | LcFirst}}Ele{Name: "{{.Name}}", value: {{if eq .Tpe "string"}}"{{.Value}}"{{else}}{{.Value}}{{end}}, Description: "{{.Description}}"},
         {{- end}}
     }
-    {{.NewName | LcFirst}}EnumNameMap = map[string]*{{.NewName | LcFirst}}Ele{
-        {{- range $e := .Elements}}
-            "{{.Name}}": &{{$.NewName}}Enum.{{.Name}},
-        {{- end}}
-    }
-    {{.NewName | LcFirst}}EnumValueMap = map[{{.Tpe}}]*{{.NewName | LcFirst}}Ele{
-        {{- range $e := .Elements}}
-            {{if eq .Tpe "string"}}"{{.Value}}"{{else}}{{.Value}}{{end}}: &{{$.NewName}}Enum.{{.Name}},
-        {{- end}}
-    }
+    
 )
 `
