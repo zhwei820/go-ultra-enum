@@ -1,4 +1,4 @@
-module github.com/drinks5/go-ultra-enum
+module github.com/zhwei820/go-ultra-enum
 
 require (
 	golang.org/x/mod v0.5.1 // indirect

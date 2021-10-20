@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/drinks5/go-ultra-enum/parser"
+	"github.com/zhwei820/go-ultra-enum/parser"
 )
 
 var (

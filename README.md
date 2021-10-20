@@ -12,7 +12,7 @@ From a github release
 
 
 ```bash
-go get -u github.com/drinks5/go-ultra-enum
+go get -u github.com/zhwei820/go-ultra-enum
 ```
 
 ## Example

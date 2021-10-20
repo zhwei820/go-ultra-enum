@@ -187,6 +187,7 @@ func (p *Parser) Render(buf *bytes.Buffer, tmpl string, model interface{}) {
 	t := template.Must(template.New(tmpl).Funcs(funcMap).Parse(tmpl))
 	err := t.Execute(buf, model)
 	if err != nil {
+		fmt.Println("err", err)
 		log.Fatal("Execute: ", err)
 		return
 	}

@@ -3,3 +3,4 @@ gonum
 /dist
 /bin
 .vscode
+go-ultra-enum
